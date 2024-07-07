@@ -48,7 +48,6 @@ body{
 .offer{
     height: 400px;
     width: 100%;
-    /* background-color:#EBF400; */
     background-image: url("offerbackground2.png");
     background-size: cover;
     display: flex;
@@ -61,7 +60,6 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     font-weight: 200;
-    
 }
 .offer span{
     font-size: 50px;
@@ -100,12 +98,43 @@ body{
 .Menu li{
     padding: 20px;
 }
+.options{
+    margin-left: 20px;
+    border: none ;
+    display: none;
+}
+.options select{
+    background-color:#9E87BD;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.options option{
+    background-color: rgb(216, 211, 211);
+    color: black;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin:20px;
+    font-weight: 400;
+}
+.optionss{
+    margin-left: 20px;
+    border: 1px solid black ;
+    display:none ;
+    font-weight: 400;
+}
+.optionss option{
+    background-color: rgb(216, 211, 211);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin:20px;
+}
 .contanir{
-    /* width: 100vw;
-    height: 140vh; */
     width: 1220px;
     height: 850px;
-    /* border: 2px solid black; */
     display: flex;
 }
 .main-nav{
@@ -114,7 +143,6 @@ body{
     width: 20vw;
     margin-top: 3vh;
     overflow: scroll;
-    /* position: fixed; */
     border-radius: 15px;
     border: 1px solid black;
 }
@@ -135,31 +163,21 @@ body{
 }
 .card{
     background-color: rgba(245, 245, 245, 0.314);
-    /* height: 135vh;
-    width: 930px; */
     height: 800px;
     width: 930px;
-    /* position: absolute; */
     margin-left: 4vh;
     margin-top: 3vh;
     border-radius: 15px;
-    /* padding: 1vh;
-    gap: 5vw;  */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 30px 20px;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
-    /* justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around; */
     border: 1px solid black;
 }
 .card div{
     height: 350px;
     width: 250px;
-    /* border: 2px solid black; */
     text-align:left;
     font-size: 0.8rem
 }
@@ -188,14 +206,10 @@ body{
     margin-top: 305px;
     position: absolute;
 }
-
 .main-shadibox{
     width: 1220px;
     height: 1350px;
-    /* border: 5px solid black;  */
     display: flex;
-    /* background-color: red; */
-    /* background-color: #402B3A; */
 }
 .shadi{
     height: 1300px;
@@ -206,8 +220,6 @@ body{
     border-radius: 10px;
     margin-top: 10px;
     margin-left: 10px;
-    /* background-color: rgb(199, 53, 53); */
-    /* background-color: #86B6F6; */
 }
 .shadi-box{
    height: 305px;
@@ -218,24 +230,20 @@ body{
    flex-direction: row;
    border: 1px solid black; 
    border-radius: 10px;
-   /* background-color: #B4D4FF ; */
 }
 .shadi-box img{
     height: 304px;
     width: 301px;
    border-top-left-radius: 10px;
    border-bottom-left-radius: 10px;
-    
 }
 .img-data{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid green; */
     height: 300px;
     width: 640px;
     background-color: #ffffFF;
     border-radius: 10px;
-
 }
 .img-data  #buy-now{
     width: 80px;
@@ -304,7 +312,6 @@ body{
     margin-left: 10px;
     gap: 10px;
     margin-top: 5px;
-    
 }
 .main-navv{
     background-color: rgb(216, 211, 211);
@@ -332,8 +339,6 @@ body{
 .main-navv li{
     padding: 20px;
 }
-
-
 @media (max-width:768px){
     .top-nav{
         height: auto;
@@ -357,7 +362,6 @@ body{
     .main-nav{
         height: max-content;
     }
-    
     .card{
         grid-template-columns: repeat(2,1fr);
         width: max-content;
@@ -380,7 +384,6 @@ body{
         border: none;
         margin-bottom: 30px;
     }
-  
     .shadi-box img{
         width: 420px;
         border-radius: 5px ;
@@ -463,6 +466,14 @@ body{
     .main-navv{
        display: none;
     }
-   
-   
+    .options{
+        margin-left: 20px;
+        border: 1px solid black ;
+        display: inline;
+    }
+    .optionss{
+        position: absolute;
+        margin-top: 1470px;
+        display: inline;
+    }
 }
